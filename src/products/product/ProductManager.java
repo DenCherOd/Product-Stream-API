@@ -57,8 +57,8 @@ public class ProductManager {
         return totalPriceOfThisYearProducts;
     }
 
-    public Map<String, List<Product>> groupProducts() {
-        Map<String, List<Product>> groupProducts = productList.stream()
+    public Map<Type, List<Product>> groupProducts() {
+        Map<Type, List<Product>> groupProducts = productList.stream()
                 .collect(Collectors.groupingBy(Product::getType));
         return groupProducts;
     }

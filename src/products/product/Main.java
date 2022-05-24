@@ -8,5 +8,6 @@ public class Main {
         System.out.println(productManager.findCheapestBook(Type.BOOK));
         System.out.println(productManager.getLastThreeAddedProducts());
         System.out.println(productManager.getSumPriceFromThisYearProductsWithMaxPrice(Type.BOOK, 75));
+        System.out.println(productManager.groupProducts());
     }
 }
